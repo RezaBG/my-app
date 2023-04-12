@@ -17,4 +17,7 @@
 .from-btn {
   margin: 1rem;
   background: transparent;
+  border: none;
+  font: inherit;
+  color: #e0e0e0;
 }
