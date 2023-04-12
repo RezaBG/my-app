@@ -9,14 +9,14 @@ const App = () => {
 
   useEffect(() => {
     const sendRequest = async () => {
-      const response = await fetch("http://localhost:8000/product");
+      const responce = await fetch("http://localhost:8000/product");
 
-      const responseData = await response.json();
+      const responseData = await responce.json();
 
-      console.log(responseData);
+      setProduct(responseData);
     };
 
-    setProduct(responseData);
+    sendRequest();
   }, []);
 
   const AddProduct = async (title) => {
